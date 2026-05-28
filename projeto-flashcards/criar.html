@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Flashcard</title>
+</head>
+
+<body>
+    <div id="menu-hamburger"> <input type="button" value="☰"> </div>
+
+    <aside id="sidebar">
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="ferramentas.html">Ferramentas de estudo</a></li>
+            <li><a href="lixeira.html">Lixeira</a></li>
+
+        </ul>
+        <section id="modos">
+            <button>Múltipla escolha</button>
+            <button>Resposta escrita</button>
+            <button>Verdadeiro e falso</button>
+        </section>
+    </aside>
+
+    <main id="area-card">
+        <section>
+            <div id="container-alternativas">
+                <input type="text" placeholder="Área do card">
+                <input type="text" placeholder="Alternativa 1">
+                <input type="text" placeholder="Alternativa 2">
+                <button id="btn-add-alternativa">+ Adicionar alternativa</button>
+            </div>
+
+        </section>
+        <section id="acoes">
+            <button id="btn-criar">Criar Flashcard</button>
+            <button id="btn-salvar">Salvar</button>
+        </section>
+    </main>
+
+    <aside id="lista-cards">
+        <div id="container-lista">
+            <p>Nenhum card criado ainda.</p>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
