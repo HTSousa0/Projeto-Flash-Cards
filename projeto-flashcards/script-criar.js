@@ -126,3 +126,10 @@ document.querySelectorAll("#modos button").forEach(function (botao) {
     selecionarModo(botao)
   })
 })
+
+document.getElementById("menu-hamburger").addEventListener("click", function () {
+  document.getElementById("sidebar").classList.toggle("aberto")
+})
+document.getElementById("btn-fechar-sidebar").addEventListener("click", function () {
+  document.getElementById("sidebar").classList.remove("aberto")
+})

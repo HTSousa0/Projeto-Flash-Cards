@@ -5,49 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Flashcard</title>
+    <link href="reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-criar.css">
 </head>
 
 <body>
-    <div id="menu-hamburger"> <input type="button" value="☰"> </div>
+    <div id="menu-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-    <aside id="sidebar">
-        <ul>
+    <div id="layout">
+        <aside id="sidebar">
+            <button id="btn-fechar-sidebar">✕</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="ferramentas.html">Ferramentas de estudo</a></li>
+                <li><a href="lixeira.html">Lixeira</a></li>
+            </ul>
+            <section id="modos">
+                <button>Múltipla escolha</button>
+                <button>Resposta escrita</button>
+                <button>Verdadeiro e falso</button>
+            </section>
+        </aside>
 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="ferramentas.html">Ferramentas de estudo</a></li>
-            <li><a href="lixeira.html">Lixeira</a></li>
-
-        </ul>
-        <section id="modos">
-            <button>Múltipla escolha</button>
-            <button>Resposta escrita</button>
-            <button>Verdadeiro e falso</button>
-        </section>
-    </aside>
-
-    <main id="area-card">
-        <section>
-            <div id="container-alternativas">
-                <input type="text" id="input-pergunta" placeholder="Área do card">
-                <input type="text" class="input-alternativa" placeholder="Alternativa 1">
-                <input type="text" class="input-alternativa" placeholder="Alternativa 2">
-                <button id="btn-add-alternativa">+ Adicionar alternativa</button>
-            </div>
-
-        </section>
-        <section id="acoes">
-            <button id="btn-criar">Criar Flashcard</button>
-            <button id="btn-salvar">Salvar</button>
-            <button id="btn-limpar">Limpar</button>
-        </section>
-    </main>
-
-    <aside id="lista-cards">
-        <div id="container-lista">
-            <p>Nenhum card criado ainda.</p>
+        <div id="conteudo-principal">
+            <main id="area-card">
+                <section>
+                    <div id="container-alternativas">
+                        <input type="text" id="input-pergunta" placeholder="Área do card">
+                        <input type="text" class="input-alternativa" placeholder="Alternativa 1">
+                        <input type="text" class="input-alternativa" placeholder="Alternativa 2">
+                        <button id="btn-add-alternativa">+ Adicionar alternativa</button>
+                    </div>
+                </section>
+                <section id="acoes">
+                    <button id="btn-criar">Criar Flashcard</button>
+                    <button id="btn-salvar">Salvar</button>
+                    <button id="btn-limpar">Limpar</button>
+                </section>
+            </main>
         </div>
-    </aside>
+
+        <aside id="lista-cards">
+            <div id="container-lista">
+                <p>Nenhum card criado ainda.</p>
+            </div>
+        </aside>
+    </div>
 
     <script src="script-criar.js"></script>
 </body>
